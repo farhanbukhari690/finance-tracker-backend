@@ -19,7 +19,7 @@ const userRoutes = require("./routes/userRoutes");
 app.use("/api/auth", authRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/users", userRoutes);
-app.get("/test",()=>{
+app.get("/test",(req,res)=>{
   res.json({status:"Ok"})
 })
 
