@@ -19,6 +19,9 @@ const userRoutes = require("./routes/userRoutes");
 app.use("/api/auth", authRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/users", userRoutes);
+app.get("/test",()=>{
+  res.json({status:"Ok"})
+})
 
 app.get("/", (req, res) => {
   res.send("Finance Tracker API is running 🚀");
